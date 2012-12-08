@@ -1,0 +1,5 @@
+[greptilian]
+name=greptilian
+baseurl=http://yum.greptilian.com
+gpgcheck=0
+enabled=1

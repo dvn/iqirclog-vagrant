@@ -1,0 +1,5 @@
+#!/bin/sh
+cron='@reboot screen -d -m bash /usr/local/dvn/bin/iqlogbot'
+dest='/var/spool/cron/iqlogbot'
+echo $cron > $dest
+chown iqlogbot $dest

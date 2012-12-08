@@ -1,0 +1,2 @@
+#!/bin/sh
+puppet apply --modulepath=/root/iqirclog-vagrant/modules /root/iqirclog-vagrant/manifests/init.pp
