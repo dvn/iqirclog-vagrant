@@ -49,6 +49,11 @@ class iqirclog {
     require => File['/var/www/irclog/ilbot'],
   }
 
+  file { '/var/www/irclog/ilbot/cgi/template/footer.tmpl':
+    source  => 'puppet:///modules/iqirclog/var/www/irclog/ilbot/cgi/template/footer.tmpl',
+    require => File['/var/www/irclog/ilbot/cgi/template'],
+  }
+
   file { '/var/www/irclog/ilbot/cgi/template/day.tmpl':
     source  => 'puppet:///modules/iqirclog/var/www/irclog/ilbot/cgi/template/day.tmpl',
     require => File['/var/www/irclog/ilbot/cgi/template'],
